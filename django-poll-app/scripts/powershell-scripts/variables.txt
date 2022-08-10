@@ -1,0 +1,37 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
+subscriptionName="5a17f918-e4ce-4df3-862c-7032677f8084" # subscriptionName or subscriptionID
+resourceGroupName="todaypollapp-rg"
+resourceGroupLocaltion="East US"
+# CONTAINER REGISTERY DETAILS
+acrRegistryName="todaypollsacr012"
+# STORAGE ACCOUNT FILE SHARE DETAILS
+aksStorageAccountname="todaypollsapp012"
+aksFileSharename="todaypollsappfs012"
+aksStorageAccountSKU="Standard_LRS"
+# AZURE KEY VAULT DETAILS
+akvName="todaypollappskv0234"
+# AZURE CLUSTER DETAILS
+clusterName="todaypoll-clust-today12"
+# CREATING AKS CLUSTER IN DIFFERENT RESOURCE GROUP
+aksResourceGroupName="aks-todaypolls-cluster-rg"
+workerNodeCount=1
+kubernetesVersion="1.21.9"
+networkPlugin="azure"
+loadBalancerSKU="Standard"
+nodeVMSize="Standard_B2s"
+winNodePoolName="npwin"
+winNodeVMSize="Standard_DS2_v2"
+winWorkerNodeCount=3
+enableAutoScaler=True
+nodeMinCount=1
+nodeMaxCount=4
+enableMonitoring=True
+server="click2cloud.net"
+# CREATING MYSQL SERVER 
+mysqlServerName="todaypoll-server"
+mysqlServerAdminUser="user"
+mysqlServerAdminUserPassword="Root#123"
+mysqlDatabaseName="todaypolldatab"
+mysqlskuname="B_Gen5_1"
+mysqlstoragesize= "5120"
